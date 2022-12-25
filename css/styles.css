@@ -25,14 +25,20 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+.section{
+    padding: 0 156px;
+}
 
      .header {
         padding-top: 24px;
         padding-bottom: 24px;
         border-bottom: 1px solid #E7E9FC;
         display: flex;
-        
      }
+     .header-nav {
+        display: flex;
+        align-items: center;
+    }
 
      .header-navigation {
         display: flex;
@@ -62,7 +68,7 @@ body{
  } */
 
 .header-link {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
     color:var(--brand-color-navy-blue);
@@ -76,6 +82,7 @@ body{
 }
 .header-contacts-list{
     display: flex;
+    margin-left: auto;
     list-style: none;
     gap: 40px;
 }
@@ -103,22 +110,25 @@ body{
 }
 .banner {
     background-color: var(--brand-color-navy-blue);
-    padding: 188px 473px;
+    padding: 188px 0;
     display: flex;
     justify-content: center;
 }
 .banner-title {
     font-size: 56px;
+    font-weight: 700;
     line-height: 1.07;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 48px;
     max-width: 494px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .banner-button {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.04em;
@@ -127,11 +137,13 @@ body{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor:pointer;
-    width: 169px;
-    height: 56px;
     border: none;
-    display: block;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+
 }
 .banner-button:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -154,11 +166,13 @@ body{
 
 .advantages-title {
     font-size: 20px;
+    font-weight: 500;
     line-height: 1.2;
     margin-bottom: 8px;
 }
 .advantages-description {
     color:var(--brand-color-grey);
+    font-weight: 400;
 }
  .about {
     padding-top: 120px;
@@ -167,6 +181,7 @@ body{
 
 .about-title {
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.11px;
     text-align: center;
     text-transform: capitalize;
@@ -190,6 +205,7 @@ background-color: #F4F4FD;
 
 .team-title {
     font-size: 36px;
+    font-weight: 700;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
@@ -255,11 +271,11 @@ margin-bottom: 32px;
 
 .buttons-all{
     color: #FFFFFF;
-    background-color: var(--brand-color-blue);
+    background-color: #404BBF;
 }
 .buttons-btn {
     color: var(--brand-color-blue);
-    background-color: #E7E9FC;
+    background-color: #F4F4FD;
     
 }
  
@@ -271,18 +287,22 @@ margin-bottom: 32px;
     row-gap: 48px;
 }
 
-/* .portfolio-item {
+ .portfolio-item a{
+    text-decoration: none;
 } 
-
+/*
 .portfolio-image {} */
 
 .portfolio-title {
     font-size: 20px;
+    color: var(--brand-color-navy-blue);
+    font-weight: 500;
     line-height: 1.2;
     margin-bottom: 8px;
 }
 .portfolio-category {
     color:var(--brand-color-grey);
+    font-weight: 400;
 }
 .portfolio-card-wrap{
     padding: 32px 54px 32px 16px;
